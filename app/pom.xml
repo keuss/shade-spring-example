@@ -58,6 +58,12 @@
                   <!-- the target file to include -->
                   <file>src/main/conf/test.txt</file>
                 </transformer>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+                  <!-- in the shaded jar -->
+                  <resource>com/keuss/spring-app.xml</resource>
+                  <!-- the target file to include -->
+                  <file>src/main/conf/spring-app.xml</file>
+                </transformer>
               </transformers>
             </configuration>
           </execution>
