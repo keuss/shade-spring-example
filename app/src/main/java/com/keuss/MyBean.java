@@ -1,6 +1,6 @@
 package com.keuss;
 
-public class MyBean {
+public class MyBean implements MyBeanITF {
 
 	private String name;
 	private int time;
